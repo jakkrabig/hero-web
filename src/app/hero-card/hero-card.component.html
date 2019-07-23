@@ -1,0 +1,12 @@
+<div class="container-fluid" style="margin-top: 1vh;">
+  <div class="row">
+    <div *ngFor="let hero of heroList" class="col-md-2">
+      <div class="card bg-light mb-3" style="max-width: 18rem;" (click)="onClickDetail(hero.id)">
+        <div class="card-header text-center">{{hero.name}}</div>
+        <div class="card-body">
+          <img [src]="hero.image.url" alt="" style="width: 100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

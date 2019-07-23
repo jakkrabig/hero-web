@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#" [routerLink]="['/']" >
+      <img src="http://pluspng.com/img-png/png-hero-hero-cartoon-1200.png" width="60" height="40" class="d-inline-block align-top" alt="">
+  </a>
+  <div>
+    <form class="form-inline my-2 my-lg-0">
+      <input [(ngModel)]="name" name="name" class="form-control mr-sm-2" type="search" placeholder="Search"
+        aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" [routerLink]="['/search/',name]" (click)="onClickSearch()">Search</button>
+    </form>
+  </div>
+</nav>
