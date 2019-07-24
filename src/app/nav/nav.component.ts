@@ -16,6 +16,10 @@ export class NavComponent implements OnInit {
   }
 
   onClickSearch() {
-    this.router.navigate(['/search/', this.name]);
+    if (this.name === '') {
+      this.router.navigate(['']);
+    } else {
+      this.router.navigate(['/search/', this.name]);
+    }
   }
 }
